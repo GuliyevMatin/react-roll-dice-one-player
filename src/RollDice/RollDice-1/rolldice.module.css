@@ -1,0 +1,61 @@
+.myDice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.diceBtn{
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.diceBtnClicked{
+    background: #4AC29A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.diceImg{
+    width:250px;
+    height:250px;
+    margin:0 30px;
+    background-color:rgb(109, 107, 99);
+    border-radius: 35px;
+}
+
+.shakeImg{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-20px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(20px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-14px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(14px, 0, 0);
+    }
+  }
+  
